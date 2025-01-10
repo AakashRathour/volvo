@@ -148,7 +148,8 @@
         padding: 16px;
         margin-top: 16px;
     }
-    .mob-from{
+
+    .mob-from {
         margin: 0 -8px;
     }
 }
@@ -187,3 +188,21 @@
 
 
 /* Footer section */
+.footer-section {
+    border-radius: 0px;
+    background-image: url('../images/volvo/bg-Footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footerForm .form-control {
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #D8DADC;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    box-shadow: none;
+    padding: 0 16px;
+}

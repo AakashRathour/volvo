@@ -85,6 +85,61 @@
 
 
     </section>
+    <section class="footer-section my-5">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-7">
+
+                    <div class="py-4">
+                        <h1>Get in Touch with Us</h1>
+                        <div class="footerForm">
+                            <div class="row no-margin">
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name" placeholder="Name">
+                                </div>
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name" placeholder="Email">
+                                </div>
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name"
+                                        placeholder="Phone Number">
+                                </div>
+                                <div class="col-6 form-group pl-0">
+                                    <div class="form-group mb-0">
+                                        <label for="brand_Id" class="sr-only">Select Brand</label>
+                                        <select class="form-control" id="brand_Id" name="brand_id"
+                                            onchange="GetDealerCities(this.value,'dealer');">
+                                            <option value="" data-slug="">Select State</option>
+                                            <option value="2" data-slug="tata">UP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 form-group pr-0">
+                                    <div class="form-group mb-0">
+                                        <label for="cities" class="sr-only">Select Cities</label>
+                                        <select class="form-control" id="cities" name="dist_id">
+                                            <option value="">Select Cities</option>
+                                            <option value="">Noida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 no-padding">
+                                    <button type="submit" class="w-100 fillBtn" id="filterDealer" title="Search">Book a
+                                        Test Drive</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 d-flex align-items-end justify-content-end">
+                    <a href="#" target="_blank">
+                        <img width="520" height="133" class="img-fluid" src="./images/volvo/iphon-footer.png"
+                            data-src="./images/volvo/iphon-footer.png" alt="Mobile App">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./js/jslib.js?v=1.0"></script>
 </body>
 
