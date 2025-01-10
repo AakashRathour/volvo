@@ -1,0 +1,189 @@
+.homeBanner {
+    position: relative;
+
+}
+
+.bg-blue {
+    background: #1572D31A;
+
+}
+
+
+.homeBanner {
+    position: relative;
+}
+
+.headingbar {
+    position: relative
+}
+
+.headingbar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    background-color: #1B7DBF;
+}
+
+
+
+.homeBanner-filterForm .form-control {
+    border-radius: 6px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #D8DADC;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    box-shadow: none;
+    padding: 0 16px;
+}
+
+.homeBanner.homeBanner-overlay::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+/* .homeBanner-filterForm {
+    box-shadow: 5px 4px 41px 0px #7D7D7D40;
+    max-width: 476px;
+    width: 100%;
+    position: relative;
+    padding: 30px 25px 25px;
+
+} */
+/* 
+.homeBanner-filterForm::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #006DB7;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+@media (max-width: 900px) {
+    .homeBanner.homeBanner-overlay::before {
+        position: unset;
+    }
+}
+
+.homeBanner.homeBanner-overlay .homeBanner-content {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .homeBanner.homeBanner-overlay .homeBanner-content {
+        color: #333;
+    }
+}
+
+.homeBanner .homeBanner-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 80%;
+}
+
+
+@media (max-width: 900px) {
+    .homeBanner .homeBanner-content {
+        position: unset;
+        transform: unset;
+        max-width: unset;
+    }
+
+    .mobileBanner {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.homeBanner .homeBanner-content h1 {
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+@media (max-width: 900px) {
+    .homeBanner .homeBanner-content h1 {
+        font-size: 18px;
+    }
+}
+
+/* .homeBanner .homeBanner-content p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+} */
+/* 
+@media (max-width: 900px) {
+    .homeBanner .homeBanner-content p {
+        font-size: 13px;
+    }
+} */
+
+.homeBanner .homeBanner-content.homeBanner-filter .homeBanner-filterForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 4px solid #006DB7;
+}
+
+@media (max-width: 900px) {
+    .homeBanner .homeBanner-content.homeBanner-filter .homeBanner-filterForm {
+        padding: 16px;
+        margin-top: 16px;
+    }
+    .mob-from{
+        margin: 0 -8px;
+    }
+}
+
+@media (max-width: 575px) {
+    .homeBanner .homeBanner-content.homeBanner-filter .homeBanner-filterForm button {
+        margin-top: 10px;
+    }
+}
+
+.homeright p {
+    color: #000000;
+}
+
+.homeright .home-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47.69px;
+    text-align: left;
+
+}
+
+.homeright .home-pera {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.59px;
+}
+
+.brandName {
+    letter-spacing: 9px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+/* Footer section */

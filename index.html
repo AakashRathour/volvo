@@ -11,7 +11,80 @@
 </head>
 
 <body>
-    <h1>testing</h1>
+    <section class="homeBanner">
+        <img src="./images/volvo/volvo-home-banner.webp" class="img-fluid" alt="" width="1920" height="692">
+
+        <div class="container">
+            <div class="mobileBanner d-block d-md-none">
+                <div class="">
+                    <p class="brandName">volvo</p>
+                    <p class="home-title">Experience the Future of Driving with Volvo EX40</p>
+                    <p class="home-pera">Sustainable, Sleek, and Electric</p>
+                </div>
+            </div>
+            <div class="homeBanner-content homeBanner-filter">
+                <div class="row">
+                    <div class="col-12 col-md-4 mob-from">
+                        <form class="homeBanner-filterForm">
+                            <div class="row">
+                                <div class="col-sm-12 mb-2">
+                                    <div class="sectionHeading headingbar mb-3">
+                                        <h1>Book Your Volvo Test Drive Today</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name" placeholder="Name">
+                                </div>
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name" placeholder="Email">
+                                </div>
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name"
+                                        placeholder="Phone Number">
+                                </div>
+                                <div class="col-6 form-group pl-0">
+                                    <div class="form-group mb-0">
+                                        <label for="brand_Id" class="sr-only">Select Brand</label>
+                                        <select class="form-control" id="brand_Id" name="brand_id"
+                                            onchange="GetDealerCities(this.value,'dealer');">
+                                            <option value="" data-slug="">Select State</option>
+                                            <option value="2" data-slug="tata">UP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 form-group pr-0">
+                                    <div class="form-group mb-0">
+                                        <label for="cities" class="sr-only">Select Cities</label>
+                                        <select class="form-control" id="cities" name="dist_id">
+                                            <option value="">Select Cities</option>
+                                            <option value="">Noida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 no-padding">
+                                    <button type="submit" class="w-100 fillBtn" id="filterDealer" title="Search">Book a
+                                        Test Drive</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6 homeright d-none d-md-block">
+                        <div class="pl-5">
+                            <p class="brandName">volvo</p>
+                            <p class="home-title">Experience the Future of Driving with Volvo EX40</p>
+                            <p class="home-pera">Sustainable, Sleek, and Electric</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
     <script src="./js/jslib.js?v=1.0"></script>
 </body>
 
