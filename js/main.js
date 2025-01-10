@@ -73,3 +73,52 @@ $(function() {
         let userleadDetails	=	userLeadData(brandPass,truckPass);
         
             });
+
+/* scroll to top */
+$(document).scroll(function(e) {
+    e.preventDefault();
+    if ($(this).scrollTop() > 300) {
+        $('.go-to-top').show(); 
+        $('.call-us-button').addClass("scroll-top-btn");
+        $('.filterBtns-mobile').addClass("scroll-top-btn");
+            
+    } else {
+        $('.go-to-top').hide(); 
+        $('.call-us-button').removeClass("scroll-top-btn"); 
+        $('.filterBtns-mobile').removeClass("scroll-top-btn");
+    }
+});
+
+$(document).ready(function() {
+    function initializeCarousel() {
+        if($(window).width()>1151) {
+            if(!$('.ReviewSection').hasClass('owl-loaded')) {
+                $('.ReviewSection').owlCarousel({
+                    stagePadding: 350,
+                    dots: false,
+                    loop: true,
+                    items: 1,
+                    lazyLoad: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    autoplayTimeout: 5000,
+                });
+            }
+        } else {
+            if($('.ReviewSection').hasClass('owl-loaded')) {
+                $('.ReviewSection').trigger('destroy.owl.carousel');
+                $('.ReviewSection').removeClass('owl-loaded');
+                $('.ReviewSection').find('.owl-stage-outer').children().unwrap();
+            }
+        }
+    }
+
+    // Initialize the carousel based on window width
+    initializeCarousel();
+
+    // Reinitialize on window resize
+    $(window).on('resize',function() {
+        initializeCarousel();
+    });
+});
+			

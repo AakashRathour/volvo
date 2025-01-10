@@ -1,3 +1,12 @@
+.go-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    z-index: 9;
+    transition: all 0.5s ease;
+}
+
 .homeBanner {
     position: relative;
 
@@ -5,7 +14,7 @@
 
 .bg-blue {
     background: #1572D31A;
-
+    color: #1572D3
 }
 
 
@@ -109,8 +118,6 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 100%;
-        max-width: 100%;
     }
 }
 
@@ -129,12 +136,37 @@
     font-size: 14px;
     margin: 5px 0 0 0;
 } */
-/* 
-@media (max-width: 900px) {
+
+@media (max-width: 767px) {
     .homeBanner .homeBanner-content p {
         font-size: 13px;
     }
-} */
+
+    .homeBanner .mobile-top-banner {
+        height: 209px;
+        object-fit: cover;
+    }
+
+    .homeBanner .home-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.08px;
+
+    }
+
+    .mobileBanner {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 258px;
+        text-align: center;
+    }
+
+    .homeBanner .brandName img {
+        text-align: center;
+        width: 115px;
+    }
+}
 
 .homeBanner .homeBanner-content.homeBanner-filter .homeBanner-filterForm {
     background-color: #fff;
@@ -149,9 +181,6 @@
         margin-top: 16px;
     }
 
-    .mob-from {
-        margin: 0 -8px;
-    }
 }
 
 @media (max-width: 575px) {
@@ -196,6 +225,64 @@
     margin-bottom: 0 !important;
     box-shadow: none;
     padding: 0 16px;
+}
+
+.footerForm {
+    width: 450px;
+}
+
+@media (max-width: 1151px) {
+    .footerForm {
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footerForm {
+        width: 100%;
+        position: relative;
+        z-index: 9;
+    }
+
+    .footer-section {
+        background-image: none;
+        background-color: #E1EDFB;
+        position: relative;
+    }
+
+    .footer-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 100px;
+        width: 100%;
+        height: 222px;
+        background-image: url(../images/volvo/faq-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    .footer-section::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        max-width: 100px;
+        width: 100%;
+        height: 222px;
+        background-image: url(../images/volvo/faq-mobile-left.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    .bottom-mobile-index {
+        z-index: 9;
+    }
+
 }
 
 
@@ -1031,6 +1118,10 @@
     .emi-result-wrp-cont .newbank output {
         margin-top: 0;
     }
+
+    .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate .loan-period {
+        display: inline-flex !important;
+    }
 }
 
 #range::before {
@@ -1128,15 +1219,18 @@ output#demo {
         border-bottom-left-radius: 40px;
     }
 
-    .emi-calculator .section-heading h2 {
+    .section-heading h2 {
         font-size: 20px;
         font-weight: 700;
         line-height: 26px;
-
         padding: 0 10px;
     }
 }
 
+.owl-controls {
+    position: absolute;
+    margin-top: 100px;
+}
 
 /* New car section */
 .single-cam-img img {
@@ -1147,14 +1241,22 @@ output#demo {
     position: absolute;
     left: 0;
     top: 30px;
-    padding: 56px;
+    padding: 52px 52px 0 32px;
     background: #0000008F;
-    width: 428px;
-    height: 290px;
+    height: 270px;
     width: 428px;
     border-radius: 0px 10px 10px 0px;
     opacity: 0px;
 
+}
+
+@media (max-width:767px) {
+    .mobile-electric-button {
+        position: absolute;
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+    }
 }
 
 .single-cam-img .electric-tag h1 {
@@ -1188,21 +1290,18 @@ output#demo {
 }
 
 @media (max-width:767px) {
-    .single-cam-img {
-        margin: 0 -20px;
-    }
+
 
     .single-cam-img img {
         width: 100%;
-        height: 225px;
-        border-radius: 0;
+        height: 100%;
     }
 
     .electric-tag {
         width: 225px;
         height: auto;
         padding: 16px;
-        left: 10px;
+        left: 0px;
     }
 
     .single-cam-img .electric-tag h1 {
@@ -1257,13 +1356,13 @@ output#demo {
     top: 17px;
     width: 13px;
     height: 13px;
-    background-image: url(https://static-asset.tractorjunction.com/tj/icons/minus.svg);
+    background-image: url(https://static-asset.tractorjunction.com/tr/minus.svg);
     background-size: 13px;
 
 }
 
 .accordion-new .accordionBlock-inner .accordionBlock-header h3[aria-expanded=false]:before {
-    background-image: url(https://static-asset.tractorjunction.com/tj/icons/plus.svg) !important;
+    background-image: url(https://static-asset.tractorjunction.com/tr/plus.svg) !important;
 
 }
 
@@ -1286,7 +1385,7 @@ output#demo {
 
 .accordion-new .accordionBlock-inner .accordionBlock-header h2 span,
 .accordion-new .accordionBlock-inner .accordionBlock-header h3 span {
-    font-family: tj-bold;
+
     padding-bottom: 0px;
 }
 
@@ -1358,3 +1457,466 @@ section.accordion-new.faqsection::before {
     background-repeat: no-repeat;
     background-position: right center;
 }
+
+@media (max-width:1280px) {
+    section.accordion-new.faqsection::before {
+        content: none
+    }
+
+    section.accordion-new.faqsection::after {
+        display: none;
+    }
+}
+
+
+.faq-back-image img {
+    width: 100%;
+    height: auto;
+}
+
+.sectionHeading h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+
+}
+
+
+
+
+
+.features-sec {
+    margin: 70px 0;
+    background: url(../images/volvo/KeyFeatures.png);
+    background-repeat: no-repeat;
+    background-position: top 0 left -25%;
+    background-size: 58%;
+}
+
+.featureKeyItem {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 15px;
+}
+
+.featureKeyImg {
+    height: 64px;
+    min-width: 64px;
+    background: #ECF5FF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureKeytext h3 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.featureKeytext p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6D6D6D;
+}
+
+.featuerHeading {
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.featureTab {
+    font-size: 16px;
+    color: #1572D3;
+    background: #1572D31A;
+    display: inline-block;
+    padding: 12px 32px;
+    line-height: normal;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:767px) {
+    .featuerHeading {
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: normal;
+    }
+
+    .features-sec {
+        margin: 30px 0;
+        background: none;
+    }
+
+    .featureKeytext h3 {
+        font-size: 18px;
+    }
+}
+
+
+/* explore section */
+
+.container-new {
+    display: flex;
+    padding: 0 8px;
+    gap: 16px;
+    position: relative;
+}
+
+.bg-new-image {
+    position: relative;
+}
+
+
+.bg-new-image::after {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    right: -65px;
+    max-width: 80px;
+    width: 100%;
+    height: 180px;
+    background-image: url('../images/volvo/top-selling.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+@media (max-width:1280px) {
+    .bg-new-image::after {
+        content: none;
+    }
+}
+
+
+.car-card {
+    background: #FFFFFF;
+    box-shadow: -1px 1px 15px -3px #00000026;
+    border-radius: 4px;
+    margin: 0 1px 12px;
+    z-index: 1;
+    display: inline-block;
+    flex: 0 0 24%;
+    max-width: 24%;
+    border-radius: 24px;
+}
+
+.card__header img {
+    max-width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
+
+
+
+
+
+
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card-modal-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-modal-price p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.39px;
+    color: #000;
+    margin-bottom: 0;
+    font-family: "tj-regular";
+}
+
+.fule-type p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.41px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #5E6282;
+
+}
+
+.test-Drive .btn-global {
+    width: 256px;
+    margin: 0 auto;
+}
+
+.car-section h4 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 47.69px;
+}
+
+@media (max-width:1151px) {
+    .container-new {
+        gap: 16px !important;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .car-card {
+        flex: none;
+        max-width: none;
+        width: 320px;
+    }
+}
+
+@media (max-width:767px) {
+    .car-card {
+        width: 277px;
+    }
+
+    .car-section h4 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25.1px;
+    }
+
+}
+
+/* * review  start*/
+
+.reviewContainWrp-Main {
+    width: 794px;
+    padding: 40px 0;
+}
+
+@media(max-width: 1151px) {
+
+
+    .reviewContainWrp-Main {
+        flex: none !important;
+        max-width: none;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 24px;
+    }
+}
+
+.reviewSec {
+    background: #F7FBFF;
+    position: relative;
+}
+
+.reviewSec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 279px;
+    width: 100%;
+    transform: rotateY(180deg);
+    height: 297px;
+    background-image: url(../images/volvo/double-quotes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.reviewSec::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    max-width: 279px;
+    width: 100%;
+    transform: rotateY(0deg);
+    height: 297px;
+    background-image: url(../images/volvo/double-quotes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+@media(max-width:767px) {
+    .reviewSec::before {
+        top: 0;
+        right: 0;
+        max-width: 46px;
+        width: 100%;
+        height: 43px;
+    }
+
+    .reviewSec::after {
+        top: 26%;
+        left: 20px;
+        transform: translateY(-26%);
+        max-width: 46px;
+        width: 100%;
+        height: 43px;
+    }
+}
+
+
+.reviewContain-inner {
+    display: flex;
+    box-shadow: 0px 12px 24px 0px #104C8B29;
+    border-radius: 24px;
+    background-color: #fff;
+}
+
+.reviewCont-img {
+    flex: 0 0 50%;
+}
+
+.review-contentWrp {
+    flex: 0 0 50%;
+    padding: 40px 40px 0px 40px;
+}
+
+.ratingWrp {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.ratingWrp span {
+    font-size: 20px;
+}
+
+.review-contentWrp p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.reviewStarWrp {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 47px;
+}
+
+.ratingStarWrp .reviewStarWrp img {
+    width: 24px !important;
+}
+
+.authName {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #252525;
+}
+
+.locaName {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #838383;
+}
+
+.reviewAuthor {
+    margin-top: 50px;
+}
+
+.reviewMob-img {
+    display: none;
+}
+
+
+
+.reviewSec {
+    background: #F7FBFF;
+    position: relative;
+}
+
+
+
+@media(max-width:767px) {
+    .reviewContainWrp-Main {
+        width: 320px;
+    }
+}
+
+@media(max-width: 1151px) {
+    .reviewContainWrp {
+        gap: 16px !important;
+        display: flex !important;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: normal;
+        padding: 16px;
+        margin: 0;
+    }
+
+    .reviewContainWrp-Main {
+        flex: none !important;
+        max-width: none;
+        width: 90%;
+        padding: 0;
+        padding-bottom: 24px;
+    }
+}
+
+.reviewSec {
+    background: #F7FBFF;
+    position: relative;
+}
+
+@media(max-width:767px) {
+    .reviewContainWrp-Main {
+        width: 320px;
+    }
+
+    .reviewMob-img {
+        display: block;
+    }
+
+    .reviewCont-img {
+        display: none;
+    }
+
+    .review-contentWrp {
+        flex: 0 0 100%;
+        padding: 15px;
+    }
+
+    .ratingStarWrp {
+        display: flex;
+        gap: 12px;
+    }
+
+    .ratingWrp {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .ratingWrp span {
+        font-size: 14px;
+    }
+
+    .reviewAuthor {
+        margin-top: 18px;
+    }
+
+    .review-contentWrp p {
+        font-size: 13px;
+    }
+
+    .authName {
+        font-size: 13px;
+    }
+
+    .locaName {
+        font-size: 12px;
+    }
+}
+
+/* review end */

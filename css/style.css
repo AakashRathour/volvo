@@ -592,8 +592,14 @@ select.form-control {
 }
 
 /* Modalpopup */
+
+.modal-open .modal-backdrop {
+    width: 100%;
+    height: 100%;
+}
+
 .customModal {
-    padding: 15px;
+    padding: 15px !important;
 }
 
 .customModal .customModal-body .uploadImgBlock-popup .attachment-file {
@@ -715,10 +721,12 @@ select.form-control {
     font-size: 17px;
     font-weight: 700;
 }
-.sliderBlock{
+
+.sliderBlock {
     position: relative;
 }
-.sliderBlock::before{
+
+.sliderBlock::before {
     content: "";
     width: 100%;
     height: 10px;
@@ -726,10 +734,12 @@ select.form-control {
     position: absolute;
     bottom: -10px;
 }
+
 .truckSection {
     position: relative;
 }
-.truckSection::before{
+
+.truckSection::before {
     content: "";
     width: 100%;
     height: 10px;
@@ -743,12 +753,14 @@ span.is-invalid {
     display: block;
     width: 100%;
 }
- .input-group.form-group .noborder{
-border-left: 0!important;
-    border-top-left-radius: 0!important;
-    border-bottom-left-radius: 0!important;
+
+.input-group.form-group .noborder {
+    border-left: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
     padding-left: 0;
 }
+
 .input-group-text {
     background: #f8faff;
     border: 1px solid #f2f2f2;
@@ -757,25 +769,31 @@ border-left: 0!important;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
+
 .input-group.input-error .input-group-text {
-    border-color: #cd454e!important
+    border-color: #cd454e !important
 }
-input.is-invalid, select.is-invalid {
-    border-color: #cd454e!important;
+
+input.is-invalid,
+select.is-invalid {
+    border-color: #cd454e !important;
 }
-.label.error{
-color: #cd454e!important;
+
+.label.error {
+    color: #cd454e !important;
     font-size: 12px;
-    font-family: tj-regular!important;
+    font-family: tj-regular !important;
     display: block;
     margin-top: 5px;
     margin-bottom: 0;
     text-transform: capitalize;
     width: 100%;
 }
-.form-control.is-invalid:focus{
+
+.form-control.is-invalid:focus {
     box-shadow: none;
 }
-.custom-select.is-invalid{
-color: #494949;
+
+.custom-select.is-invalid {
+    color: #494949;
 }

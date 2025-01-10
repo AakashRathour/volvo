@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/csslib.css">
+    <link rel="stylesheet" href="./css/owl.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/volvo.css">
 </head>
 
 <body>
     <section class="homeBanner">
-        <img src="./images/volvo/volvo-home-banner.webp" class="img-fluid" alt="" width="1920" height="692">
+        <img src="./images/volvo/volvo-home-banner.webp" class="img-fluid mobile-top-banner" alt="" width="1920"
+            height="692">
 
         <div class="container">
             <div class="mobileBanner d-block d-md-none">
-                <div class="">
-                    <p class="brandName"><img src="images/volvo/volvo-logo.png" alt=""></p>
-                    <p class="home-title">Experience the Future of Driving with Volvo EX40</p>
-                    <p class="home-pera">Sustainable, Sleek, and Electric</p>
-                </div>
+                <p class="brandName mb-1"><img src="images/volvo/volvo-logo.png" alt=""></p>
+                <p class="home-title mb-1">Experience the Future of Driving with Volvo EX40</p>
+                <p class="home-pera ">Sustainable, Sleek, and Electric</p>
             </div>
-            <div class="homeBanner-content homeBanner-filter">
+            <div class="homeBanner-content homeBanner-filter d-none d-md-block">
                 <div class="row">
                     <div class="col-12 col-md-4 mob-from">
                         <form class="homeBanner-filterForm">
@@ -82,11 +82,219 @@
             </div>
 
         </div>
-
-
     </section>
 
-    <section class="emi-calculator my-5">
+    <section class="homeBanner">
+        <div class="container">
+            <div class="homeBanner-content homeBanner-filter d-block d-md-none">
+                <div class="row">
+                    <div class="mob-from">
+                        <form class="homeBanner-filterForm">
+                            <div class="row">
+                                <div class="col-sm-12 mb-2">
+                                    <div class="sectionHeading headingbar mb-3">
+                                        <h1>Book Your Volvo Test Drive Today</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name" placeholder="Name">
+                                </div>
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name" placeholder="Email">
+                                </div>
+                                <div class="col-sm-12 form-group no-padding">
+                                    <input type="text" class="form-control name-valid" name="name"
+                                        placeholder="Phone Number">
+                                </div>
+                                <div class="col-6 form-group pl-0">
+                                    <div class="form-group mb-0">
+                                        <label for="brand_Id" class="sr-only">Select Brand</label>
+                                        <select class="form-control" id="brand_Id" name="brand_id"
+                                            onchange="GetDealerCities(this.value,'dealer');">
+                                            <option value="" data-slug="">Select State</option>
+                                            <option value="2" data-slug="tata">UP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 form-group pr-0">
+                                    <div class="form-group mb-0">
+                                        <label for="cities" class="sr-only">Select Cities</label>
+                                        <select class="form-control" id="cities" name="dist_id">
+                                            <option value="">Select Cities</option>
+                                            <option value="">Noida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 no-padding">
+                                    <button type="submit" class="w-100 fillBtn" id="filterDealer" title="Search">Book a
+                                        Test Drive</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6 homeright d-none d-md-block">
+                        <div class="pl-5">
+                            <p class="brandName"><img src="images/volvo/volvo-logo.png" alt=""></p>
+                            <p class="home-title">Experience the Future of Driving with Volvo EX40</p>
+                            <p class="home-pera">Sustainable, Sleek, and Electric</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="features-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-7 col-md-6">
+                    <div class="d-md-none d-block"><img src="images/volvo/KeyFeatures.png" alt=""></div>
+                </div>
+                <div class="col-sm-12 col-lg-5 col-md-6 mt-md-0 mt-4">
+                    <div class="featuresMain-wrp">
+                        <div class="featureTab ">Key Features</div>
+                        <div class="featuerHeading">We offer the best experience with our deals
+                        </div>
+                        <div class="featureKey-wrp">
+                            <div class="featureKeyItem">
+                                <div class="featureKeyImg"><img src="./images/volvo/icons/wallet.svg" width="24"
+                                        height="24" alt=""></div>
+                                <div class="featureKeytext">
+                                    <h3>475 km Electric Range (Up to)
+                                    </h3>
+                                    <p>Drive confidently with electric powertrains that enhance efficiency and minimize
+                                        charging times.</p>
+                                </div>
+                            </div>
+
+                            <div class="featureKeyItem">
+                                <div class="featureKeyImg"><img src="./images/volvo/icons/user-tick.svg" width="24"
+                                        height="24" alt=""></div>
+                                <div class="featureKeytext">
+                                    <h3>Powerful Acceleration</h3>
+                                    <p>Feel the excitement of powerful acceleration while enjoying a smooth,
+                                        zero-emission driving experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="featureKeyItem">
+                                <div class="featureKeyImg"><img src="./images/volvo/icons/24-support.svg" width="24"
+                                        height="24" alt=""></div>
+                                <div class="featureKeytext">
+                                    <h3>Rear-Wheel Drive Handling
+                                    </h3>
+                                    <p>Opt for the Single Motor powertrain to experience precise handling and balanced
+                                        performance.</p>
+                                </div>
+                            </div>
+
+                            <div class="featureKeyItem">
+                                <div class="featureKeyImg"><img src="./images/volvo/icons/messages-2.svg" width="24"
+                                        height="24" alt=""></div>
+                                <div class="featureKeytext">
+                                    <h3>Next-Generation Powertrains</h3>
+                                    <p>Innovative engineering delivers extended range and faster charging, ensuring an
+                                        enjoyable journey.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="car-section text-center my-4">
+        <div class="container">
+            <div class="sectionHeading text-center my-3">
+                <span class="py-3 px-4 bg-blue rounded-lg mb-4">Top Selling</span>
+                <h4 class="my-4">Explore Our Range</h4>
+            </div>
+
+            <div class="bg-new-image">
+                <div class="container-new">
+                    <div class="car-card">
+                        <div class="card__header">
+                            <img src="images/volvo/card-img/card-img-2.png" alt="card__image" class="card__image"
+                                width="600">
+                        </div>
+                        <div class="card__body">
+                            <div class="card-modal-price">
+                                <p class="card-modal">EX40</p>
+                                <p class="card-price">EX40</p>
+                            </div>
+                            <div class="fule-type mb-2">
+                                <p>Electric SUV.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="car-card">
+                        <div class="card__header">
+                            <img src="images/volvo/card-img/card-img-1.png" alt="card__image" class="card__image"
+                                width="600">
+                        </div>
+                        <div class="card__body">
+                            <div class="card-modal-price">
+                                <p class="card-modal">EX40</p>
+                                <p class="card-price">EX40</p>
+                            </div>
+                            <div class="fule-type mb-2">
+                                <p>Electric SUV.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="car-card">
+                        <div class="card__header">
+                            <img src="images/volvo/card-img/card-img-3.png" alt="card__image" class="card__image"
+                                width="600">
+                        </div>
+                        <div class="card__body">
+                            <div class="card-modal-price">
+                                <p class="card-modal">EX40</p>
+                                <p class="card-price">EX40</p>
+                            </div>
+                            <div class="fule-type mb-2">
+                                <p>Electric SUV.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="car-card">
+                        <div class="card__header">
+                            <img src="images/volvo/card-img/card-img-4.png" alt="card__image" class="card__image"
+                                width="600">
+                        </div>
+                        <div class="card__body">
+                            <div class="card-modal-price">
+                                <p class="card-modal">EX40</p>
+                                <p class="card-price">EX40</p>
+                            </div>
+                            <div class="fule-type mb-2">
+                                <p>Electric SUV.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-Drive  mt-3 text text-centers">
+                <span class="btn-global GetOnRoadPriceForm " title="Book Free Test Drive" data-toggle="modal"
+                    data-target="#getonroadprice">Book a Test Drive
+                </span>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="emi-calculator my-5 px-2 px-md-0">
         <div class="container">
             <div class="section-heading mb-3 text-center">
                 <h2 class="h2 pb-3">
@@ -264,30 +472,142 @@
         </div>
     </section>
 
-    <section class="my-4">
-        <div class="container-mid">
+    <section class="my-2 my-md-4">
+        <div class="container">
             <div class="single-cam-img position-relative">
-                <img src="./images/volvo/single-image.png" alt="simgle-image" width="1450" height="586">
+                <img src="./images/volvo/single-image.png" alt="simgle-image" width="1450" height="586"
+                    class="d-none d-md-block">
+                <img src="./images/volvo/mobile-electric-car.png" alt="simgle-image" width="1450" height="586"
+                    class="d-block d-md-none">
                 <div class="electric-tag">
                     <h1>XC40 Recharge. Pure <span class="electric-color">Electric</span>.</h1>
-                    <button class=" fillBtn-new mt-2 mt-md-4">Book A Test drive</button>
+                    <button class=" fillBtn-new mt-2 mt-md-4 d-none d-md-block">Book A Test drive</button>
+                </div>
+                <div class="mobile-electric-button">
+                    <button class=" fillBtn-new mt-2 mt-md-4 d-block d-md-none">Book A Test drive</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="sectionHeading  mb-4 text-center">
-        <h1 class="pb-3 mb-3 mt-3">Benefits of EV 3 Wheelers</h1>
-    </div>
-    <section class="accordion-new mt-4 faqsection">
-        <div class="position-relative">
-            <img src="../images/volvo/faq-bg-1.png" alt="" width="100">
-            <img src="../images/volvo/faq-bg-1.png" alt="">
+    <section class="reviewSec my-2 my-md-4 py-4">
+        <div class="container1">
+            <div class="text-center">
+                <div class="featureTab ">TESTIMONIALS</div>
+            </div>
+            <div class="section-heading mb-0 mb-md-3 text-center">
+                <h2 class="h2 pb-3">
+                    What peole say about us?
+                </h2>
+            </div>
+            <div class="reviewContainWrp row ReviewSection owl-carousel owl-theme">
+                <div class="reviewContainWrp-Main">
+                    <div class="reviewContain-inner">
+                        <div class="reviewCont-img"><img src="./images/volvo/review-img1.png" height="438" width="397"
+                                alt=""></div>
+                        <div class="review-contentWrp">
+                            <div class="ratingStarWrp">
+                                <div class="reviewMob-img"><img src="./images/volvo/review1-mob.png" height="80"
+                                        width="80" alt=""></div>
+                                <div class="">
+                                    <div class="ratingWrp">5.0<span>stars</span></div>
+                                    <div class="reviewStarWrp">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>“I recently bought the Volvo EX40, and it was an amazing experience. The ranges give me
+                                peace of mind for long drives. Plus, the 34-minute fast charging perfectly suits my
+                                needs”</p>
+                            <div class="reviewAuthor">
+                                <div class="authName">Rahul Yadav
+                                </div>
+                                <div class="locaName">From Agra
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewContainWrp-Main">
+                    <div class="reviewContain-inner">
+                        <div class="reviewCont-img"><img src="./images/volvo/review-img2.png" height="438" width="397"
+                                alt=""></div>
+                        <div class="review-contentWrp">
+                            <div class="ratingStarWrp">
+                                <div class="reviewMob-img"><img src="./images/volvo/review1-mob.png" height="80"
+                                        width="80" alt=""></div>
+                                <div class="">
+                                    <div class="ratingWrp">5.0<span>stars</span></div>
+                                    <div class="reviewStarWrp">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>“The Volvo EX40 is everything I wanted in an electric SUV. The interior is sleek and
+                                modern, and I love the Google built-in feature for navigation. This car makes my commute
+                                easier and more enjoyable.
+                                ”</p>
+                            <div class="reviewAuthor">
+                                <div class="authName">Anjali Yadav
+                                </div>
+                                <div class="locaName">From Delhi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewContainWrp-Main">
+                    <div class="reviewContain-inner">
+                        <div class="reviewCont-img"><img src="./images/volvo/review-img2.png" height="438" width="397"
+                                alt=""></div>
+                        <div class="review-contentWrp">
+                            <div class="ratingStarWrp">
+                                <div class="reviewMob-img"><img src="./images/volvo/review1-mob.png" height="80"
+                                        width="80" alt=""></div>
+                                <div class="">
+                                    <div class="ratingWrp">5.0<span>stars</span></div>
+                                    <div class="reviewStarWrp">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                        <img src="./images/volvo/icons/star.svg" width="24" height="24" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>“After owning the Volvo EX40 for a month, I’m completely impressed. The 17.6 kWh energy efficiency makes it economical to run. It’s spacious enough for my family trips. The overall performance is fantastic. ”</p>
+                            <div class="reviewAuthor">
+                                <div class="authName">Sameeksha Singh </div>
+                                <div class="locaName">From Pune</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test-Drive text text-centers">
+                <span class="btn-global GetOnRoadPriceForm " title="Book Free Test Drive" data-toggle="modal"
+                    data-target="#getonroadprice">Book a Test Drive
+                </span>
+            </div>
         </div>
-        <div class="container-mid">
-            
-            <div class="row py-3 align-items-center mobileaccordionBlock">
-                <div class="col-12 col-sm-6 col-md-6 mx-auto">
+
+    </section>
+
+    <div class="sectionHeading  mb-4 text-center">
+        <h2 class="pb-0 pb-md-3 mb-3">Frequently Asked Questions</h2>
+    </div>
+
+    <section class="accordion-new mt-4 faqsection">
+        <div class="container">
+            <div class="row py-0 py-md-3 align-items-center mobileaccordionBlock">
+                <div class="col-12 col-md-6 mx-auto">
 
                     <div class="accordionBlock accordion" id="faqblock">
                         <div class="accordionBlock-inner sectionShadow">
@@ -308,12 +628,12 @@
                         </div>
                         <div class="accordionBlock-inner sectionShadow">
                             <div class="accordionBlock-header" id="heading1">
-                                <h3 data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
+                                <h3 data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
                                     aria-controls="collapse1">
                                     <span> Is the Volvo EX40 fully electric or a plug-in hybrid? </span>
                                 </h3>
                             </div>
-                            <div id="collapse1" class="b-t-1 collapse" aria-labelledby="heading1"
+                            <div id="collapse1" class="b-t-1 collapse show" aria-labelledby="heading1"
                                 data-parent="#faqblock">
                                 <div class="accordionBlock-body">
                                     The Volvo EX40 is a fully electric SUV, offering a sustainable driving experience
@@ -401,13 +721,15 @@
         </div>
     </section>
 
-    <section class="footer-section my-5">
+    <section class="footer-section mt-5">
         <div class="container-md">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-md-7">
 
-                    <div class="py-4">
-                        <h1>Get in Touch with Us</h1>
+                    <div class="py-4 py-md-5">
+                        <div class="sectionHeading  mb-4">
+                            <h2 class="pb-0 pb-md-3 mb-3 text-center text-md-left">Get in Touch with Us</h2>
+                        </div>
                         <div class="footerForm">
                             <div class="row no-margin">
                                 <div class="col-sm-12 form-group no-padding">
@@ -447,16 +769,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5 d-flex align-items-end justify-content-end">
+                <div
+                    class="col-12 col-md-5 d-flex align-items-end justify-content-end mt-md-0 mt-3 bottom-mobile-index">
                     <a href="#" target="_blank">
-                        <img width="520" height="133" class="img-fluid" src="./images/volvo/iphon-footer.png"
-                            data-src="./images/volvo/iphon-footer.png" alt="Mobile App">
+                        <img width="350" height="133" class="img-fluid" src="./images/volvo/iphon-footer.png"
+                            alt="Mobile App">
                     </a>
                 </div>
             </div>
         </div>
     </section>
-
 
     <div class="modal fade customModal leadpopup" id="getonroadprice" data-backdrop="static" data-keyboard="false"
         tabindex="-1" aria-hidden="true">
@@ -522,8 +844,18 @@
             </div>
         </div>
     </div>
+
+
+    <div class="go-to-top box-shadow text-center hand-cursor">
+        <span class="btn-global GetOnRoadPriceForm " title="Book Free Test Drive" data-toggle="modal"
+            data-target="#getonroadprice">Book a Test Drive
+        </span>
+    </div>
+
     <script src="./js/jslib.js?v=1.0"></script>
+    <script src="./js/owl.js"></script>
     <script src="./js/main.js?v=1.0"></script>
+
 </body>
 
 </html>
