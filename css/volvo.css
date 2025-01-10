@@ -178,15 +178,6 @@
     line-height: 22.59px;
 }
 
-.brandName {
-    letter-spacing: 9px;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-
-
 /* Footer section */
 .footer-section {
     border-radius: 0px;
@@ -205,4 +196,1165 @@
     margin-bottom: 0 !important;
     box-shadow: none;
     padding: 0 16px;
+}
+
+
+/* emi calculator */
+
+.calculator-inner {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .calculator-inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .section-heading {
+        /* order: 1; */
+        padding: 8px 20px 0;
+    }
+}
+
+.calculator-inner .calculate-emi {
+    padding: 0;
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+@media (max-width: 1279px) {
+    .calculator-inner .calculate-emi {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .calculate-emi {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content {
+    border: 0;
+    padding: 0;
+}
+
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months {
+    margin-top: 0;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate {
+    padding-bottom: 8px;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n {
+    width: 100%;
+    position: relative;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n h5,
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n h4,
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n .h4 {
+    font-size: 14px;
+    color: #000000;
+    font-family: "TJ-Regular", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
+    letter-spacing: initial;
+    background: transparent;
+    border: 0;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n p {
+    font-size: 14px;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: #FFFFFF;
+    border: 1px solid #D9DEE2;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 3px 7px 4px 14px;
+    margin: 0;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n .newbank input[type=range] {
+    background: #edebe9;
+    background-image: linear-gradient(#006DB7, #006DB7);
+    background-size: 11% 100%;
+    background-repeat: no-repeat;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n .newbank .price-lowHigh .rang-price,
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n .newbank .price-lowHigh .percent-price {
+    font-size: 11px;
+    color: #969696;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .loan-period {
+        justify-content: flex-start;
+    }
+
+    .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .loan-period::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .loan-period .loan-period-steps {
+    background: #FBFBFB;
+    font-size: 14px;
+    color: #232323;
+    font-family: "TJ-Regular", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 370px) {
+    .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .loan-period .loan-period-steps {
+        min-width: 41px;
+    }
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .loan-period .loan-period-steps.active {
+    background: #006db7;
+    color: #fff;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .loan-period .loan-period-steps:after {
+    display: none;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate h5,
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate h4,
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate .h4 {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+
+    .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate h5,
+    .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate h4,
+    .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate .h4 {
+        font-family: "TJ-Regular", Arial, Helvetica, sans-serif;
+    }
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate .loan-period {
+    margin-top: 8px;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .loanOffer-btn-row {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .loanOffer-btn-row .fillBtn {
+    background: #006DB7;
+    border-color: #006DB7;
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .calculate-emi .calculate-emi-Content .loanOffer-btn-row .fillBtn {
+        font-size: 14px;
+    }
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .loanOffer-btn-row .fillBtn:hover {
+    box-shadow: none;
+    background-color: #1b7dbf;
+    border-color: #1b7dbf;
+    color: #fff;
+}
+
+.calculator-inner .col-container {
+    flex-basis: 45%;
+    max-width: 45%;
+    padding: 15px 25px 20px 35px;
+}
+
+@media (max-width: 1279px) {
+    .calculator-inner .col-container {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 15px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .calculator-inner .col-container {
+        padding: 15px 5px 20px 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .col-container {
+        padding: 8px 20px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .col-container {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.calculator-inner .col-container .col-circle-inner {
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 10px 17px 22px;
+}
+
+@media (max-width: 1450px) {
+    .calculator-inner .col-container .col-circle-inner {
+        padding: 10px 10px 22px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .calculator-inner .col-container .col-circle-inner {
+        padding: 10px 10px 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .col-container .col-circle-inner {
+        padding: 20px 15px 12px;
+    }
+}
+
+.semi-circle {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    float: left;
+    width: 100%;
+}
+
+.barOverflow {
+    /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: -14px;
+    width: 320px;
+    height: 160px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .barOverflow {
+        width: 220px;
+        height: 110px;
+    }
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 320px;
+    /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 40px solid #F2F7FD;
+    /* half gray, */
+    border-bottom-color: #254154;
+    /* half azure */
+    border-right-color: #254154;
+}
+
+@media (max-width: 767px) {
+    .bar {
+        width: 220px;
+        height: 220px;
+        border: 30px solid #F2F7FD;
+        border-bottom-color: #254154;
+        /* half azure */
+        border-right-color: #254154;
+    }
+}
+
+.price-bar {
+    bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    margin-top: 18px;
+    max-width: 320px;
+}
+
+@media (max-width: 767px) {
+    .price-bar {
+        max-width: 220px;
+    }
+}
+
+.price-bar p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+}
+
+.monthly-emi {
+    position: absolute;
+    top: 92px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    .monthly-emi {
+        top: 55px;
+    }
+}
+
+.monthly-emi p {
+    font-size: 15px;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    margin: 0;
+}
+
+@media (max-width: 1279px) {
+    .monthly-emi p {
+        font-size: 14px;
+    }
+}
+
+.monthly-emi .monthly-emi-price {
+    cursor: pointer;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1279px) {
+    .monthly-emi .monthly-emi-price {
+        font-size: 25px;
+    }
+}
+
+.Down-Payment-wrap {
+    margin-top: 22px;
+}
+
+@media (max-width: 767px) {
+    .Down-Payment-wrap {
+        margin-top: 5px;
+    }
+}
+
+.Down-Payment-wrap .Down-Payment-in p {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: #000000;
+    font-family: "TJ-Regular", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 767px) {
+    .Down-Payment-wrap .Down-Payment-in p {
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
+
+.Down-Payment-wrap .Down-Payment-in p img {
+    position: relative;
+    top: -1px;
+}
+
+@media (max-width: 767px) {
+    .Down-Payment-wrap .Down-Payment-in p img {
+        max-width: 10px;
+    }
+}
+
+
+.emi-result-wrp-cont .newbank input[type=range] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 100%;
+    height: 3px;
+    background: #FFF2EE;
+    border-radius: 15px;
+    position: relative;
+    background-image: linear-gradient(#006DB7, #006DB7);
+    background-size: 12% 100%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+    .emi-result-wrp-cont .newbank input[type=range] {
+        margin-right: 0px;
+    }
+}
+
+.emi-result-wrp-cont .newbank input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #006DB7 !important;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .emi-result-wrp-cont .newbank input[type=range]::-webkit-slider-thumb {
+        height: 20px;
+        width: 20px;
+        border: 2px solid #006DB7 !important;
+        margin-right: 0px;
+    }
+}
+
+.emi-result-wrp-cont .newbank input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.emi-result-wrp-cont .newbank input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #006DB7 !important;
+    box-sizing: border-box;
+    cursor: pointer;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .emi-result-wrp-cont .newbank input[type=range]::-moz-range-thumb {
+        height: 20px;
+        width: 20px;
+        border: 2px solid #006DB7 !important;
+    }
+}
+
+.emi-result-wrp-cont .newbank input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.emi-result-wrp-cont .newbank input[type=range]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #FFF2EE;
+    border: 5px solid #006DB7;
+    box-sizing: border-box;
+    cursor: pointer;
+    -ms-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+    .emi-result-wrp-cont .newbank input[type=range]::-ms-thumb {
+        height: 40px;
+        width: 40px;
+        border: 2px solid #006DB7;
+    }
+}
+
+.emi-result-wrp-cont .newbank input[type=range]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.emi-months-wrp {
+    width: 85%;
+    margin-left: 10%;
+}
+
+@media (max-width: 1280px) {
+    .emi-months-wrp {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .emi-months-wrp {
+        width: 95%;
+        margin: 30px auto 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .emi-months-wrp {
+        width: 100%;
+        display: none;
+    }
+}
+
+.emi-months-wrp .calculate-row {
+    margin-top: 35px;
+}
+
+.emi-months-wrp .calculate-row .calculate-emi-price {
+    flex-basis: 100%;
+}
+
+.emi-months-wrp .calculate-row .calculate-emi-price .calculate-emi-label {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.emi-result-wrp-cont {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .emi-result-wrp-cont {
+        width: 100%;
+    }
+}
+
+.emi-result-wrp-cont .newbike-card-wrp {
+    padding: 25px 20px;
+    border: 1px solid #EFEFEF;
+}
+
+@media (max-width: 991px) {
+    .emi-result-wrp-cont .newbike-card-wrp {
+        border-left: 0;
+        border-right: 0;
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .emi-result-wrp-cont .newbike-card-wrp {
+        padding: 25px 9px;
+    }
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate h5 {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: #A7A7A7;
+    font-family: "tj-bold", arial, helvetica, sans-serif;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1600px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate h5 {
+        font-size: 16px;
+        color: #243c4f;
+        margin-bottom: 4px;
+    }
+}
+
+.truckSlides {
+    height: 230px;
+    padding: 11px 40px;
+}
+
+.emi-result-wrp-cont .newbikeSingle-left .truckSlides img {
+    border-radius: 0px;
+    height: 135px;
+    position: relative;
+    border-radius: 3px;
+}
+
+@media (max-width: 1450px) {
+    .emi-result-wrp-cont .newbikeSingle-left .truckSlides img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 991px) {
+    .emi-result-wrp-cont .newbikeSingle-left .truckSlides img {
+        height: initial;
+    }
+}
+
+@media (max-width: 767px) {
+    .emi-result-wrp-cont .newbikeSingle-left .truckSlides img {
+        border-radius: 2px;
+    }
+}
+
+.emi-result-wrp-cont .newbikeSingle-left .truckSlides img .newbikeSingle-left .emi-reverse {
+    align-items: center;
+}
+
+.emi-result-wrp-cont .newbike-card-wrp .newbikeSingle-left.emi-reverse {
+    align-items: center;
+}
+
+.emi-result-wrp-cont .newbike-card-wrp .title-emi-wrp {
+    position: relative;
+}
+
+.emi-result-wrp-cont .newbike-card-wrp .title-emi-wrp .emibrnads {
+    font-size: 13px;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+    color: #5A5A5A;
+    letter-spacing: 0.5px;
+}
+
+.emi-result-wrp-cont .newbike-card-wrp .title-emi-wrp .title-emi h1,
+.emi-result-wrp-cont .newbike-card-wrp .title-emi-wrp .title-emi .h1 {
+    font-size: 14px;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif !important;
+    margin-bottom: 0;
+    color: #000000;
+    letter-spacing: 0.5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.emi-result-wrp-cont .newbike-card-wrp .title-emi-wrp .edit-img a {
+    position: absolute;
+    right: -5px;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #1688D4;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .emi-result-wrp-cont .newbike-card-wrp .title-emi-wrp .edit-img a {
+        right: 0;
+    }
+}
+
+.emi-result-wrp-cont .newbike-card-wrp .special-feature span {
+    font-size: 11px;
+    font-family: "TJ-Regular", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    color: #707070;
+}
+
+.emi-result-wrp-cont .range-slide-months {
+    margin-top: 25px;
+}
+
+.emi-result-wrp-cont .range-slide-months .down-payment-rate h5,
+.emi-result-wrp-cont .range-slide-months .down-payment-rate h4,
+.emi-result-wrp-cont .range-slide-months .down-payment-rate .h4 {
+    font-size: 14px;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+    color: #323232;
+}
+
+.emi-result-wrp-cont .range-slide-months .down-payment-rate p {
+    font-size: 20px;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate .range-slider-n {
+    width: 88%;
+}
+
+@media (max-width: 1499px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate .range-slider-n {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate .range-slider-n {
+        width: 100%;
+    }
+
+    .calculate-emi .calculate-emi-Content .down-payment-rate .range-slider-n p {
+        font-size: 20px;
+        color: #000000;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate.newscrool-rate {
+        padding-bottom: 10px;
+    }
+}
+
+.emi-result-wrp-cont .range-slide-months .newscrool-rate {
+    padding-bottom: 0;
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate .loan-period {
+    border-radius: 8px;
+    height: 45px;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate .loan-period {
+        background: #F2F7FD;
+        margin-top: 12px;
+        margin-bottom: 0px;
+    }
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate .loan-period .loan-period-steps {
+    border-radius: 0px;
+    height: 100%;
+    min-width: 44px;
+    font-size: 13px;
+    font-family: "TJ-bold", Arial, Helvetica, sans-serif;
+    flex: none;
+    max-width: none;
+    background: #F9F9F9;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 370px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate .loan-period .loan-period-steps {
+        min-width: 41px;
+    }
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate .loan-period .loan-period-steps:after {
+    content: "";
+    width: 1px;
+    right: 0;
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 1px solid #DADADA;
+}
+
+@media (max-width: 767px) {
+    .calculate-emi .calculate-emi-Content .down-payment-rate .loan-period .loan-period-steps:after {
+        display: none;
+    }
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate .loan-period .loan-period-steps:last-child:after {
+    display: none;
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate .loan-period .loan-period-steps.active {
+    background: #006DB7;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate .loan-period .loan-period-steps.active:after {
+    border-right: 1px solid transparent;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate .loan-period {
+    position: relative;
+}
+
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate.newscrool-rate .loan-period .loan-period-freeze,
+.calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n .range-slider-freeze {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: transparent;
+    cursor: pointer;
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate h5 {
+    line-height: 20px;
+    letter-spacing: -.5px;
+}
+
+.calculate-emi .calculate-emi-Content .down-payment-rate p {
+    line-height: 20px;
+    letter-spacing: -.5px;
+}
+
+#truckCalculate .calculator-inner .calculate-emi .calculate-emi-Content .emi-result-wrp-cont .range-slide-months .down-payment-rate .range-slider-n .newbank input[type=range] {
+    background-image: linear-gradient(#1B7DBF, #1B7DBF);
+}
+
+.emi-result-wrp-cont .newbank input,
+.emi-result-wrp-cont .newbank output {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width:767px) {
+
+    .emi-result-wrp-cont .newbank input,
+    .emi-result-wrp-cont .newbank output {
+        margin-top: 0;
+    }
+}
+
+#range::before {
+    left: 0;
+    content: attr(data-min);
+}
+
+#range::after {
+    right: 0;
+    content: attr(data-max);
+}
+
+@media (max-width: 1199px) {
+    .calculate-emi .calculate-emi-Content .fillBtn {
+        font-size: 16px;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .calculator-inner .calculate-emi .calculate-emi-Content .loanOffer-btn-row .fillBtn {
+        font-size: 14px;
+    }
+}
+
+output#demo {
+    margin-left: 5px;
+}
+
+.emi-wrap-volvo {
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #E1EDFB;
+}
+
+.emi-right-result {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 15px 25px 20px 35px;
+}
+
+.emi-right-result-bg {
+    background: #E1EDFB;
+    border-radius: 5px;
+    width: 100%;
+
+    padding: 36px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+.image-result {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #CADEF4;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.MonthlyEMI p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.08px;
+    text-align: left;
+
+}
+
+.MonthlyEMI p.priceing {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45.18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+@media (max-width:767px) {
+    .emi-right-result {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .emi-wrap-volvo {
+        padding: 0px;
+        border: none;
+    }
+
+    .emi-right-result-bg {
+        padding: 20px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    .emi-calculator .section-heading h2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+
+        padding: 0 10px;
+    }
+}
+
+
+/* New car section */
+.single-cam-img img {
+    border-radius: 20px;
+}
+
+.electric-tag {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    padding: 56px;
+    background: #0000008F;
+    width: 428px;
+    height: 290px;
+    width: 428px;
+    border-radius: 0px 10px 10px 0px;
+    opacity: 0px;
+
+}
+
+.single-cam-img .electric-tag h1 {
+    font-family: 'tj-regular';
+    padding-left: 24px;
+    border-left: 7px solid #fff;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 52px;
+    text-align: left;
+    color: #fff;
+
+}
+
+.electric-color {
+    color: #00CDA7;
+}
+
+.fillBtn-new {
+    background: #00CDA7;
+    border: 1px solid #00CDA7;
+    color: #fff;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 8px 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media (max-width:767px) {
+    .single-cam-img {
+        margin: 0 -20px;
+    }
+
+    .single-cam-img img {
+        width: 100%;
+        height: 225px;
+        border-radius: 0;
+    }
+
+    .electric-tag {
+        width: 225px;
+        height: auto;
+        padding: 16px;
+        left: 10px;
+    }
+
+    .single-cam-img .electric-tag h1 {
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 36px;
+    }
+}
+
+
+
+/* accoudien- new */
+.accordion-new {
+    background-color: #fff;
+    position: relative;
+
+}
+
+
+/* new faq */
+
+.accordion-new .accordionBlock-inner {
+    border-radius: 3px;
+    margin-bottom: 20px
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-header h3 {
+    background: #F0F5FF;
+    padding: 15px 35px 15px 15px;
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    border-bottom: none;
+    border-radius: 8px;
+}
+
+@media(max-width: 767px) {
+
+    .accordion-new .accordionBlock-inner .accordionBlock-header h3 {
+        text-transform: uppercase;
+        letter-spacing: .8px;
+        line-height: 1.6;
+        padding: 10px 35px 10px 12px
+    }
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-header h3:before {
+    position: absolute;
+    content: "";
+    right: 15px;
+    top: 17px;
+    width: 13px;
+    height: 13px;
+    background-image: url(https://static-asset.tractorjunction.com/tj/icons/minus.svg);
+    background-size: 13px;
+
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-header h3[aria-expanded=false]:before {
+    background-image: url(https://static-asset.tractorjunction.com/tj/icons/plus.svg) !important;
+
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-header h3[aria-expanded=false] {}
+
+.accordion-new .accordionBlock-inner .accordionBlock-header h3[aria-expanded=true] {
+    background: #fff;
+    border: 1px solid #000;
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-body {
+    border: 1px solid #000;
+    border-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-header h2 span,
+.accordion-new .accordionBlock-inner .accordionBlock-header h3 span {
+    font-family: tj-bold;
+    padding-bottom: 0px;
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-body {
+    padding: 0px 15px 12px;
+    background: #FFFFFF;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@media(max-width: 767px) {
+    .accordion-new .accordionBlock-inner .accordionBlock-body {
+        padding: 12px
+    }
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-body p,
+.accordionBlock .accordionBlock-inner .accordionBlock-body h4 {
+    font-size: 14px
+}
+
+.accordion-new .accordionBlock-inner .accordionBlock-body p:last-child,
+.accordion-new .accordionBlock-inner .accordionBlock-body h4:last-child {
+    margin-bottom: 0
+}
+
+.accordion-new .accordionBlock-inner:last-child {
+    margin-bottom: 0
+}
+
+@media(max-width: 767px) {
+    .accordion-new .mobileaccordionBlock {
+        flex-direction: column;
+    }
+
+    .accordion-new .accordionBlock.accordion {
+        margin: 0px;
+    }
+}
+
+.faqsection .headingbar:after {
+    content: none
+}
+
+section.accordion-new.faqsection::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/volvo/faq-bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+section.accordion-new.faqsection::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/volvo/faq-bg-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
 }

@@ -17,7 +17,7 @@
         <div class="container">
             <div class="mobileBanner d-block d-md-none">
                 <div class="">
-                    <p class="brandName">volvo</p>
+                    <p class="brandName"><img src="images/volvo/volvo-logo.png" alt=""></p>
                     <p class="home-title">Experience the Future of Driving with Volvo EX40</p>
                     <p class="home-pera">Sustainable, Sleek, and Electric</p>
                 </div>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="col-6 homeright d-none d-md-block">
                         <div class="pl-5">
-                            <p class="brandName">volvo</p>
+                            <p class="brandName"><img src="images/volvo/volvo-logo.png" alt=""></p>
                             <p class="home-title">Experience the Future of Driving with Volvo EX40</p>
                             <p class="home-pera">Sustainable, Sleek, and Electric</p>
                         </div>
@@ -85,6 +85,322 @@
 
 
     </section>
+
+    <section class="emi-calculator my-5">
+        <div class="container">
+            <div class="section-heading mb-3 text-center">
+                <h2 class="h2 pb-3">
+                    Quick calculation of your Car Loan EMI
+                </h2>
+            </div>
+            <div id="truckCalculate" class="emi-wrap-volvo">
+                <div class="calculator-series mt-4">
+
+                    <div class="calculator-inner">
+                        <div class="calculate-emi">
+                            <div class="calculate-emi-Content">
+                                <div class="emi-result-wrp-cont">
+                                    <div class="range-slide-months">
+                                        <!-- new layout single slider -->
+                                        <div class="down-payment-rate">
+                                            <div class="range-slider-n">
+
+                                                <div class="range-slider-pay d-flex justify-content-between">
+                                                    <h5>Down Payment</h5>
+                                                    <p>₹<output id="demo">1,99,984</output></p>
+                                                </div>
+
+                                                <div class="newbank">
+                                                    <input type="range" name="down_payment" aria-label="range"
+                                                        value="199984" min="0" max="999920"
+                                                        oninput="demo.value=toIndianCurrency(Number(value));calculateEMI();"
+                                                        style="background-size:20%, 100%">
+                                                    <div class="price-lowHigh d-flex justify-content-between">
+                                                        <p class="rang-price">₹ 0</p>
+                                                        <p class="rang-price">₹ 9,99,920</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- new layout single slider -->
+
+                                        <div class="down-payment-rate">
+                                            <div class="range-slider-n">
+
+                                                <div class="range-slider-pay d-flex justify-content-between">
+                                                    <h5>Interest Rate</h5>
+                                                    <p><output id="rangenumber">15</output> %</p>
+                                                </div>
+                                                <div class="newbank">
+                                                    <input type="range" name="interest" value="15" aria-label="range"
+                                                        min="8" max="22"
+                                                        oninput="rangenumber.value=value;calculateEMI()"
+                                                        style="background-size: 50% 100%;">
+                                                    <div class="price-lowHigh d-flex justify-content-between">
+                                                        <p class="percent-price">8 %</p>
+                                                        <p class="percent-price">22 %</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="down-payment-rate newscrool-rate mt-2">
+                                            <h5> Loan Period (Months)</h5>
+                                            <div class="loan-period d-flex flex-row align-items-center">
+
+                                                <div class="loan-period-steps d-flex align-items-center justify-content-center "
+                                                    onclick="calculateEMI(12)">
+                                                    <span>12</span>
+                                                </div>
+                                                <div class="loan-period-steps d-flex align-items-center justify-content-center "
+                                                    onclick="calculateEMI(24)">
+                                                    <span>24</span>
+                                                </div>
+                                                <div class="loan-period-steps d-flex align-items-center justify-content-center "
+                                                    onclick="calculateEMI(36)">
+                                                    <span>36</span>
+                                                </div>
+                                                <div class="loan-period-steps d-flex align-items-center justify-content-center "
+                                                    onclick="calculateEMI(48)">
+                                                    <span>48</span>
+                                                </div>
+                                                <div class="loan-period-steps d-flex align-items-center justify-content-center active"
+                                                    onclick="calculateEMI(60)">
+                                                    <span>60</span>
+                                                </div>
+                                                <div class="loan-period-steps d-flex align-items-center justify-content-center "
+                                                    onclick="calculateEMI(72)">
+                                                    <span>72</span>
+                                                </div>
+                                                <div class="loan-period-steps d-flex align-items-center justify-content-center "
+                                                    onclick="calculateEMI(84)">
+                                                    <span>84</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="loanOffer-btn-row">
+                                            <button class="w-100 fillBtn loanpopupform" data-pagetype="Product page"
+                                                data-formname="EMI calculator" data-title="Tata Yodha 2.0"
+                                                data-brand="2" data-model="2444" data-type="New"
+                                                data-url="https://trucks.tractorjunction.com/en/tata-truck/yodha-2-0"
+                                                title="View Loan Offers">View Loan Offers</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="emi-right-result">
+                            <div class="emi-right-result-bg">
+                                <div class="image-result">
+                                    <img src="./images/volvo/icons/OBJECTS.png" alt="" width="146" height="95">
+                                    <div class="MonthlyEMI">
+                                        <p class="m-0">Monthly EMI</p>
+                                        <p class="priceing monthly-emi-price new-price">₹8,045</p>
+                                    </div>
+                                </div>
+                                <div class="apply-button">
+                                    <p> <b>Note:</b> This is an approximate value. The final value may differ.</p>
+                                    <button class="mt-2 fillBtn " data-toggle="modal"
+                                        data-target="#getonroadprice">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-container d-none">
+                            <div class="col-circle-inner">
+                                <div class="semi-circle">
+                                    <div class="barOverflow">
+                                        <div class="bar" style="transform: rotate(81deg);"></div>
+                                    </div>
+
+                                    <div class="d-none">
+                                        <span>20</span>
+                                    </div>
+
+                                    <div class="monthly-emi">
+                                        <div class="monthly-emi-price new-price GetOnRoadPriceForm"
+                                            data-buttontype="emi-calculator" data-formname="EMI calculator GORP button"
+                                            data-title="Please share your details for more information" data-brand="2"
+                                            data-model="2444"
+                                            data-url="https://trucks.tractorjunction.com/en/tata-truck/yodha-2-0"
+                                            title="Check Offers">₹19,030</div>
+                                        <p>Monthly EMI</p>
+                                    </div>
+
+                                    <div class="price-bar">
+                                        <p class="downpayment">₹ 0</p>
+                                        <p class="TotalAmout OnroadPrice">₹ 9,99,920</p>
+                                    </div>
+
+                                    <div class="Down-Payment-wrap">
+                                        <div
+                                            class="Down-Payment-in d-flex align-items-center justify-content-between mb-2 pt-1">
+                                            <p>
+                                                <img src="https://static-asset.tractorjunction.com/tr/dark-react.svg"
+                                                    class="mr-1" width="13" height="14" alt="dark-react">Down Payment
+                                            </p>
+                                            <p class="LoanAmount">₹ 1,99,984</p>
+                                        </div>
+
+                                        <div class="Down-Payment-in d-flex align-items-center justify-content-between">
+                                            <p>
+                                                <img src="https://static-asset.tractorjunction.com/tr/light-react.svg"
+                                                    class="mr-1" width="13" height="14" alt="light-react">Total Loan
+                                                Amount
+                                            </p>
+                                            <p class="payableAmount">₹ 7,99,936</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- inner end div -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-4">
+        <div class="container-mid">
+            <div class="single-cam-img position-relative">
+                <img src="./images/volvo/single-image.png" alt="simgle-image" width="1450" height="586">
+                <div class="electric-tag">
+                    <h1>XC40 Recharge. Pure <span class="electric-color">Electric</span>.</h1>
+                    <button class=" fillBtn-new mt-2 mt-md-4">Book A Test drive</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sectionHeading  mb-4 text-center">
+        <h1 class="pb-3 mb-3 mt-3">Benefits of EV 3 Wheelers</h1>
+    </div>
+    <section class="accordion-new mt-4 faqsection">
+        <div class="position-relative">
+            <img src="../images/volvo/faq-bg-1.png" alt="" width="100">
+            <img src="../images/volvo/faq-bg-1.png" alt="">
+        </div>
+        <div class="container-mid">
+            
+            <div class="row py-3 align-items-center mobileaccordionBlock">
+                <div class="col-12 col-sm-6 col-md-6 mx-auto">
+
+                    <div class="accordionBlock accordion" id="faqblock">
+                        <div class="accordionBlock-inner sectionShadow">
+                            <div class="accordionBlock-header" id="heading0">
+                                <h3 data-toggle="collapse" data-target="#collapse0" aria-expanded="false"
+                                    aria-controls="collapse0" class="collapsed"> <span> What safety features does the
+                                        Volvo EX40 have?</span>
+                                </h3>
+                            </div>
+                            <div id="collapse0" class="b-t-1 collapse" aria-labelledby="heading0"
+                                data-parent="#faqblock">
+                                <div class="accordionBlock-body">
+                                    The Volvo EX40 is equipped with advanced safety features such as automatic emergency
+                                    braking, lane-keeping assist, adaptive cruise control, and blind-spot monitoring,
+                                    ensuring a secure and comfortable driving experience on every journey.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionBlock-inner sectionShadow">
+                            <div class="accordionBlock-header" id="heading1">
+                                <h3 data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
+                                    aria-controls="collapse1">
+                                    <span> Is the Volvo EX40 fully electric or a plug-in hybrid? </span>
+                                </h3>
+                            </div>
+                            <div id="collapse1" class="b-t-1 collapse" aria-labelledby="heading1"
+                                data-parent="#faqblock">
+                                <div class="accordionBlock-body">
+                                    The Volvo EX40 is a fully electric SUV, offering a sustainable driving experience
+                                    without the need for fuel. Enjoy the benefits of electric mobility, including zero
+                                    emissions and the convenience of home charging for your daily routines.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionBlock-inner sectionShadow">
+                            <div class="accordionBlock-header" id="heading2">
+                                <h3 data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                                    aria-controls="collapse2">
+                                    <span> What’s the range of the Volvo EX40? </span>
+                                </h3>
+                            </div>
+                            <div id="collapse2" class="b-t-1 collapse" aria-labelledby="heading2"
+                                data-parent="#faqblock">
+                                <div class="accordionBlock-body">
+                                    The Volvo EX40 offers an electric range of up to 475 km. The range depends on
+                                    various factors such as driving style and external conditions. However, it’s
+                                    designed to offer a long-range driving experience for both daily commutes and longer
+                                    trips.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionBlock-inner sectionShadow">
+                            <div class="accordionBlock-header" id="heading3">
+                                <h3 data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                                    aria-controls="collapse3">
+                                    <span>What equipment do I need to charge a Volvo EX40 at home?
+                                    </span>
+                                </h3>
+                            </div>
+                            <div id="collapse3" class="b-t-1 collapse" aria-labelledby="heading3"
+                                data-parent="#faqblock">
+                                <div class="accordionBlock-body">
+                                    To charge your Volvo EX40 at home, you’ll need a compatible electric vehicle (EV)
+                                    charger. A wall-mounted home charging unit or a standard socket can be used. It’s
+                                    recommended to use an efficient charger for optimal performance and safety.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionBlock-inner sectionShadow">
+                            <div class="accordionBlock-header" id="heading3">
+                                <h3 data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                                    aria-controls="collapse4">
+                                    <span>What makes the Volvo EX40’s interior unique?
+                                    </span>
+                                </h3>
+                            </div>
+                            <div id="collapse4" class="b-t-1 collapse" aria-labelledby="heading4"
+                                data-parent="#faqblock">
+                                <div class="accordionBlock-body">
+                                    The Volvo EX40 features a premium interior with leather-free options, eco-friendly
+                                    upholstery, and intelligent storage solutions. The cabin is designed for comfort
+                                    with sculpted décor, ample cargo space, and a panoramic roof, creating a
+                                    sophisticated and versatile experience.
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordionBlock-inner sectionShadow">
+                            <div class="accordionBlock-header" id="heading3">
+                                <h3 data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                                    aria-controls="collapse5">
+                                    <span>How easy is it to charge the Volvo EX40 on the road?
+                                    </span>
+                                </h3>
+                            </div>
+                            <div id="collapse5" class="b-t-1 collapse" aria-labelledby="heading5"
+                                data-parent="#faqblock">
+                                <div class="accordionBlock-body">
+                                    Charging the Volvo EX40 on the road is hassle-free with numerous charging stations
+                                    available. The vehicle's integrated Google Maps system helps you find nearby
+                                    stations. Additionally, you can monitor and schedule charging via the Volvo Cars app
+                                    for convenience.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="footer-section my-5">
         <div class="container-md">
             <div class="row">
@@ -140,7 +456,74 @@
             </div>
         </div>
     </section>
+
+
+    <div class="modal fade customModal leadpopup" id="getonroadprice" data-backdrop="static" data-keyboard="false"
+        tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <a href="javascript:void(0)" class="close sectionShadow text-center" data-dismiss="modal"
+                    aria-label="Close">
+                    <img src="https://static-asset.tractorjunction.com/tr/close.svg" width="23" height="23" alt="" />
+                </a>
+                <div class="customModal-header">
+                    <p class="modalHeading mb-1 text-uppercase boldfont">
+                    <p class="modalHeading mb-1 text-uppercase boldfont">Share your information to get a call back</p>
+                    </p>
+                </div>
+                <div class="customModal-body mt-2">
+                    <form id="formSubmit">
+                        <!--@csrf
+                         <input type="hidden" name="brand" value="">
+                        <input type="hidden" name="truck" value="">
+                        <input type="hidden" name="state" value="">
+                        <input type="hidden" name="dist_id" value="">
+                        <input type="hidden" name="utm_source"
+                            value="{{ !empty(GetCookie('utm_source')) ? GetCookie('utm_source') : '' }}">
+                        <input type="hidden" name="utm_medium"
+                            value="{{request()->has('utm_medium') ? request()->utm_medium : '' }}">
+                        <input type="hidden" name="utm_campaign"
+                            value="{{request()->has('utm_campaign') ? request()->utm_campaign : '' }}">
+                        <input type="hidden" name="utm_content"
+                            value="{{request()->has('utm_content') ? request()->utm_content : '' }}">
+                        <input type="hidden" name="utm_term"
+                            value="{{request()->has('utm_term') ? request()->utm_term : '' }}"> -->
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input type="text" class="form-control name-valid noborder" name="name" id="Name"
+                                    placeholder="Name" autocomplete="off" />
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <input type="number" class="form-control mobile-valid noborder" name="mobile" id="phone"
+                                    placeholder="Enter Mobile" maxlength="10" autocomplete="off" />
+                            </div>
+
+                            <div class="col-sm-12 form-group">
+                                <div class="form-group mb-0">
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                        <option>Select city</option>
+                                        <option>Gurgaon</option>
+                                        <option>Noida</option>
+                                        <option>Ghaziabad</option>
+                                        <option>Faridabad</option>
+                                        <option>Bangaluru</option>
+                                        <option>Hyderabad</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="fillBtn w-100">Check Offers</button>
+                        <p class="text-center mt-2 mb-0"> proceeding ahead you expressly agree to the Truck Junctions <a
+                                class="linkclr" href="https://d7truck.tractorfirst.com/en/terms-and-condition"
+                                target="_blank" title="Terms and Conditions">Terms and Conditions</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/jslib.js?v=1.0"></script>
+    <script src="./js/main.js?v=1.0"></script>
 </body>
 
 </html>
